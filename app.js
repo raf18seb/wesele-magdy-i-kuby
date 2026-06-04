@@ -55,6 +55,31 @@
   })();
 
   /* ===================================================================
+     2b. MOBILE NAV - hamburger toggles the dropdown menu
+     =================================================================== */
+  (function mobileNav() {
+    var bar = document.querySelector('.topbar');
+    var toggle = document.querySelector('.nav-toggle');
+    var nav = document.getElementById('topnav');
+    if (!bar || !toggle || !nav) return;
+    function setOpen(open) {
+      bar.classList.toggle('nav-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    toggle.addEventListener('click', function () {
+      setOpen(!bar.classList.contains('nav-open'));
+    });
+    // close after tapping a link
+    nav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) setOpen(false);
+    });
+    // close when widening back to desktop layout
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 760) setOpen(false);
+    });
+  })();
+
+  /* ===================================================================
      3. PHOTOS - real <img> with striped placeholder fallback
      Each .photo[data-src] gets an <img>; on successful load it fades in
      and the placeholder hides. Missing/broken src keeps the placeholder.
@@ -444,10 +469,8 @@
         '</div>' + stubHtml(false) + '</div></div>';
 
       bind();
-      if (scroll) {
-        var sec = document.getElementById('rsvp');
-        if (sec) { var y = sec.getBoundingClientRect().top + window.scrollY - 70; if (window.scrollY > y) window.scrollTo({ top: y, behavior: 'smooth' }); }
-      }
+      // Celowo nie przewijamy przy zmianie kroku. Wcześniej widok "wyrzucało"
+      // na górę karty pokładowej - pozycja scrolla zostaje tam, gdzie była.
     }
 
     function renderSent() {
