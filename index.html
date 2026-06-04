@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Magda &amp; Kuba - Wesele</title>
+<meta name="description" content="Magda i Kuba zapraszają na pokład. Potwierdź obecność, poznaj plan dnia i przeciągnij wspomnienia." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Pinyon+Script&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <a href="#hero" class="mono">M&amp;K</a>
+    <nav class="topnav">
+      <a href="#historia">Nasza historia</a>
+      <a href="#galeria">Zdjęcia</a>
+      <a href="#ceremonia">Ceremonia</a>
+      <a href="#dayplan">Plan dnia</a>
+      <a class="rsvp" href="#rsvp">Odpraw się</a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" data-theme="sage" id="hero">
+    <div class="hero-copy">
+      <div class="captain">
+        <span class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+        </span>
+        <span class="txt">ZAPRASZAJĄ NA POKŁAD</span>
+        <span class="line"></span>
+      </div>
+
+      <h1 class="hero-names"><span class="l1">Magda</span><span class="l2" style="width: 692px"><span class="amp" style="position: relative; left: -1.4em; text-align: left">&amp;</span>Kuba</span></h1>
+
+      <div class="hero-meta" style="margin: 43px 0px 20px">
+        <span class="item"><span class="ph">[ 06.08.2026 ]</span></span>
+        <span class="dot"></span>
+        <span class="item"><span class="ph">[ CHEŁM ]</span></span>
+      </div>
+      <p class="hero-quote" style="margin: 48px 0px 0px">Prosimy zapiąć pasy . Odlatujemy za ...</p>
+
+      <div class="countdown" id="countdown" aria-label="Odliczanie do ślubu" style="margin: 64px 0px 0px">
+        <div class="countdown-rail">
+          <div class="cd-cell"><div class="cd-num" data-cd="days">000</div><div class="cd-lab">dni</div></div>
+          <div class="cd-cell"><div class="cd-num" data-cd="hours">00</div><div class="cd-lab">godzin</div></div>
+          <div class="cd-cell"><div class="cd-num" data-cd="mins">00</div><div class="cd-lab">minut</div></div>
+          <div class="cd-cell"><div class="cd-num" data-cd="secs">00</div><div class="cd-lab">sekund</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <figure class="photo" data-ph="zdjęcie pary · pełna wysokość" data-src="photos/hero.jpg"></figure>
+      <span class="cap">MAGDA &amp; KUBA | 2025</span>
+    </div>
+  </section>
+
+  <!-- ============ DIVIDER (repeating aviation mark) ============ -->
+  <div class="divider" aria-hidden="true">
+    <span class="seg"></span>
+    <span class="seg dash" style="width:46px"></span>
+    <span class="ico">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+    </span>
+    <span class="seg dash" style="width:46px"></span>
+    <span class="seg"></span>
+  </div>
+
+  <!-- ============ NASZA HISTORIA ============ -->
+  <section class="sec" id="historia">
+    <div class="story-grid">
+      <div class="story-copy">
+        <span class="sec-eyebrow"><span class="l"></span> Lista pasażerów · od początku</span>
+        <h2 class="sec-h">Nasza historia</h2>
+        <p style="margin-top:22px;"><strong>[ Tu zaczyna się Wasza historia. ]</strong> Wpiszcie, gdzie i kiedy się poznaliście - kilka zdań, które oddają Wasz klimat. Reszta tekstu jest tylko po to, żeby pokazać rytm akapitu.</p>
+        <p>Drugi akapit może opowiedzieć o pierwszej wspólnej podróży, pierwszym locie albo dniu zaręczyn. Mówcie własnym językiem - goście to pokochają.</p>
+        <div class="story-links">
+          <a class="story-link" href="#galeria">Zobacz zdjęcia →</a>
+          <a class="story-link" href="#ceremonia">Plan dnia →</a>
+        </div>
+      </div>
+      <div class="story-photo">
+        <figure class="photo photo-rounded" data-ph="zdjęcie pary · pion 4:5" data-src="photos/historia.jpg"></figure>
+        <span class="story-tag">M &amp; K · [ rok ]</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-rail">
+        <div class="tl-stop">
+          <div class="tl-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></div>
+          <div class="tl-name">Pierwsze spotkanie</div>
+          <div class="tl-year">[ 20— ]</div>
+        </div>
+        <div class="tl-stop">
+          <div class="tl-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-9.6A4.4 4.4 0 0 1 12 8a4.4 4.4 0 0 1 7 3.4C19 16.6 12 21 12 21z"/></svg></div>
+          <div class="tl-name">Razem</div>
+          <div class="tl-year">[ 20— ]</div>
+        </div>
+        <div class="tl-stop">
+          <div class="tl-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg></div>
+          <div class="tl-name">Pierwsza podróż</div>
+          <div class="tl-year">[ 20— ]</div>
+        </div>
+        <div class="tl-stop">
+          <div class="tl-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 7.5 22 12 19l4.5 3-1.5-8.5"/></svg></div>
+          <div class="tl-name">Zaręczyny</div>
+          <div class="tl-year">[ 20— ]</div>
+        </div>
+        <div class="tl-stop now">
+          <div class="tl-node"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="3"/><circle cx="16" cy="12" r="3"/><path d="M9 9V6M16 9V6"/></svg></div>
+          <div class="tl-name">Ślub</div>
+          <div class="tl-year">[ DATA ]</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERIA (many photos) ============ -->
+  <section class="gallery" id="galeria">
+    <div class="gallery-head">
+      <span class="sec-eyebrow"><span class="l"></span> Bagaż wspomnień <span class="l"></span></span>
+      <h2 class="sec-h">Nasze chwile</h2>
+      <p>Dodaj tu zdjęcia - im więcej, tym lepiej.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-cell g-tall"><figure class="photo photo-rounded" data-ph="zdjęcie · pion" data-src="photos/gal-1.jpg"></figure></div>
+      <div class="g-cell"><figure class="photo photo-rounded" data-ph="zdjęcie" data-src="photos/gal-2.jpg"></figure></div>
+      <div class="g-cell g-wide"><figure class="photo photo-rounded" data-ph="zdjęcie · panorama" data-src="photos/gal-3.jpg"></figure></div>
+      <div class="g-cell"><figure class="photo photo-rounded" data-ph="zdjęcie" data-src="photos/gal-4.jpg"></figure></div>
+      <div class="g-cell"><figure class="photo photo-rounded" data-ph="zdjęcie" data-src="photos/gal-5.jpg"></figure></div>
+      <div class="g-cell g-wide"><figure class="photo photo-rounded" data-ph="zdjęcie · panorama" data-src="photos/gal-6.jpg"></figure></div>
+      <div class="g-cell g-tall"><figure class="photo photo-rounded" data-ph="zdjęcie · pion" data-src="photos/gal-7.jpg"></figure></div>
+      <div class="g-cell"><figure class="photo photo-rounded" data-ph="zdjęcie" data-src="photos/gal-8.jpg"></figure></div>
+      <div class="g-cell"><figure class="photo photo-rounded" data-ph="zdjęcie" data-src="photos/gal-9.jpg"></figure></div>
+      <div class="g-cell"><figure class="photo photo-rounded" data-ph="zdjęcie" data-src="photos/gal-10.jpg"></figure></div>
+    </div>
+  </section>
+
+  <!-- ============ DIVIDER ============ -->
+  <div class="divider" aria-hidden="true">
+    <span class="seg"></span>
+    <span class="seg dash" style="width:46px"></span>
+    <span class="ico">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+    </span>
+    <span class="seg dash" style="width:46px"></span>
+    <span class="seg"></span>
+  </div>
+
+  <!-- ============ CEREMONIA & PRZYJĘCIE ============ -->
+  <section class="sec" id="ceremonia">
+    <div style="text-align:center; max-width:680px; margin:0 auto clamp(34px,5vh,56px);">
+      <span class="sec-eyebrow" style="justify-content:center;"><span class="l"></span> Plan lotu <span class="l"></span></span>
+      <h2 class="sec-h">Ceremonia &amp; przyjęcie</h2>
+    </div>
+    <div class="cer-grid">
+      <div class="cer-photo">
+        <figure class="photo photo-rounded photo-fill" data-ph="zdjęcie miejsca / sali" data-src="photos/sala.jpg"></figure>
+        <span class="story-tag">[ miejsce ]</span>
+      </div>
+      <div class="cer-stops">
+        <article class="stop-card">
+          <div class="stop-tag">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-9.6A4.4 4.4 0 0 1 12 8a4.4 4.4 0 0 1 7 3.4C19 16.6 12 21 12 21z"/><circle cx="12" cy="11" r="2"/></svg></span>
+            <span class="kicker">Odlot · Ceremonia</span>
+          </div>
+          <h3>[ Nazwa kościoła / miejsca ślubu ]</h3>
+          <p class="addr">[ ulica i numer, miejscowość ]</p>
+          <div class="stop-meta">
+            <div class="m"><div class="k">Data</div><div class="v">[ 06.08.2026 ]</div></div>
+            <div class="m"><div class="k">Godzina</div><div class="v">[ 00:00 ]</div></div>
+          </div>
+          <a class="stop-nav" href="#" target="_blank" rel="noopener">Nawiguj <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+
+        <div class="cer-route" aria-hidden="true">
+          <svg viewBox="0 0 360 78" fill="none" preserveAspectRatio="xMidYMid meet">
+            <circle cx="16" cy="56" r="4.5" fill="currentColor"/>
+            <path d="M20 54 C 110 6, 250 6, 322 42" stroke="currentColor" stroke-width="1.6" stroke-dasharray="1.5 8" stroke-linecap="round"/>
+            <g transform="translate(144.5,18.7) rotate(-6)">
+              <path d="M-9 -6 L9 0 L-9 6 L-4 0 Z" fill="currentColor"/>
+              <path d="M-4 0 L9 0" stroke="var(--paper)" stroke-width="0.9" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(322,16)" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M0 24 C -7 14, -9 10, -9 5 A 9 9 0 0 1 9 5 C 9 10, 7 14, 0 24 Z" fill="var(--paper)"/>
+              <circle cx="0" cy="5" r="3.1" fill="currentColor" stroke="none"/>
+            </g>
+          </svg>
+        </div>
+
+        <article class="stop-card">
+          <div class="stop-tag">
+            <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V8l8-5 8 5v13M9 21v-6h6v6"/></svg></span>
+            <span class="kicker">Przylot · Przyjęcie</span>
+          </div>
+          <h3>[ Nazwa sali / dworku ]</h3>
+          <p class="addr">[ ulica i numer, miejscowość ]</p>
+          <div class="stop-meta">
+            <div class="m"><div class="k">Start</div><div class="v">[ 00:00 ]</div></div>
+            <div class="m"><div class="k">Lot do</div><div class="v">[ świtu ]</div></div>
+          </div>
+          <a class="stop-nav" href="#" target="_blank" rel="noopener">Nawiguj <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </article>
+      </div>
+    </div>
+
+    <div id="dayplan" class="dayplan">
+      <div class="dayplan-head">Rozkład dnia</div>
+      <div class="dp-rail">
+        <div class="dp-item"><div class="t"><span class="ph">[ 00:00 ]</span></div><div class="l">Ceremonia</div></div>
+        <div class="dp-item"><div class="t"><span class="ph">[ 00:00 ]</span></div><div class="l">Powitanie gości</div></div>
+        <div class="dp-item"><div class="t"><span class="ph">[ 00:00 ]</span></div><div class="l">Obiad</div></div>
+        <div class="dp-item"><div class="t"><span class="ph">[ 00:00 ]</span></div><div class="l">Pierwszy taniec</div></div>
+        <div class="dp-item"><div class="t"><span class="ph">[ 00:00 ]</span></div><div class="l">Tort i zabawa</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIVIDER (repeating aviation mark) ============ -->
+  <div class="divider" aria-hidden="true">
+    <span class="seg"></span>
+    <span class="seg dash" style="width:46px"></span>
+    <span class="ico">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+    </span>
+    <span class="seg dash" style="width:46px"></span>
+    <span class="seg"></span>
+  </div>
+
+  <!-- ============ RSVP / BOARDING PASS ============ -->
+  <section id="rsvp" data-theme="pistachio">
+    <div class="rsvp-head">
+      <span class="eyebrow"><span class="l"></span> Karta pokładowa <span class="l"></span></span>
+      <h2>Odpraw się</h2>
+    </div>
+    <div id="boarding-pass-root"></div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="mono">M&amp;K</div>
+    <div class="sub">[ DATA ] · [ MIEJSCE ]</div>
+    <div class="igs">
+      <a class="ig" href="#" target="_blank" rel="noopener" aria-label="Instagram Magdy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span>[ @magda ]</span>
+      </a>
+      <a class="ig" href="#" target="_blank" rel="noopener" aria-label="Instagram Kuby">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        <span>[ @kuba ]</span>
+      </a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
